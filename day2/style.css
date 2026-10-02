@@ -1,0 +1,151 @@
+/* Box-sizing reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Base body styles */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fa;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+}
+
+header p.tagline {
+  margin: 0 0 1.5rem 0;
+  color: #b0b0c0;
+}
+/* Navigation bar layout */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Navigation links */
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+/* Centered main layout container */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* White card styling for sections */
+section {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+/* Features list grid */
+ul.features {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+/* Style individual feature cards */
+ul.features li {
+  background-color: #f7f9fa;
+  padding: 1.25rem;
+  border-radius: 6px;
+  border: 1px solid #e1e8ed;
+}
+/* Shortcuts table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #e1e8ed;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f7f9fa;
+}
+
+/* Feedback form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+label {
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e1e8ed;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: #1a1a2e;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+/* Smooth transitions for interactive elements */
+nav a, button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover effects */
+nav a:hover {
+  color: #a0a0ff;
+  text-decoration: underline;
+}
+
+button:hover {
+  background-color: #2a2a4e;
+}
+/* Responsive media query for small screens */
+@media (max-width: 600px) {
+  header {
+    padding: 1.5rem 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+}
